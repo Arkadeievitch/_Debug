@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=3]
+
+[node name="MAIN" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -192, -96 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+
+[node name="GAME" type="Node2D" parent="."]
+
+[node name="LEVEL" type="Node2D" parent="GAME"]
+
+[node name="Layer_Interface" type="CanvasLayer" parent="GAME/LEVEL"]
+
+[node name="Layer_Game" type="CanvasLayer" parent="GAME/LEVEL"]
+layer = 0
+
+[node name="Icon" type="Sprite" parent="GAME/LEVEL/Layer_Game"]
+texture = ExtResource( 3 )
