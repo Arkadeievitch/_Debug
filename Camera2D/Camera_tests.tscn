@@ -11,12 +11,12 @@ zoom = Vector2( 0.5, 0.5 )
 
 [node name="GAME" type="Node2D" parent="."]
 
-[node name="LEVEL" type="Node2D" parent="GAME"]
+[node name="LEVEL0" type="Node2D" parent="GAME"]
 
-[node name="Layer_Interface" type="CanvasLayer" parent="GAME/LEVEL"]
+[node name="Layer_Interface" type="CanvasLayer" parent="GAME/LEVEL0"]
 
-[node name="Layer_Game" type="CanvasLayer" parent="GAME/LEVEL"]
+[node name="Layer_Game" type="CanvasLayer" parent="GAME/LEVEL0"]
 layer = 0
 
-[node name="Icon" type="Sprite" parent="GAME/LEVEL/Layer_Game"]
+[node name="Icon" type="Sprite" parent="GAME/LEVEL0/Layer_Game"]
 texture = ExtResource( 3 )
