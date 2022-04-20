@@ -4,11 +4,6 @@
 
 [node name="MAIN" type="Node"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -192, -96 )
-current = true
-zoom = Vector2( 0.5, 0.5 )
-
 [node name="GAME" type="Node2D" parent="."]
 
 [node name="LEVEL0" type="Node2D" parent="GAME"]
@@ -17,6 +12,11 @@ zoom = Vector2( 0.5, 0.5 )
 
 [node name="Layer_Game" type="CanvasLayer" parent="GAME/LEVEL0"]
 layer = 0
+follow_viewport_enable = true
 
 [node name="Icon" type="Sprite" parent="GAME/LEVEL0/Layer_Game"]
 texture = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="GAME"]
+position = Vector2( -192, -96 )
+current = true
